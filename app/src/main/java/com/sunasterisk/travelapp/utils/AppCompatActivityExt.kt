@@ -53,3 +53,7 @@ fun Context.showToast(obj: Any) {
     }
     Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
 }
+
+fun Context.screenHeight() = this.resources?.displayMetrics?.heightPixels ?: 0
+
+fun Context.screenWidth(): Int? = this.resources?.displayMetrics?.widthPixels ?: 0
